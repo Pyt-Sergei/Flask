@@ -1,0 +1,15 @@
+{% extends 'layouts/layout.html' %}
+
+{% block content %}
+<a href="/users/create">Создать пользователя</a>
+<h2>Пользователи</h2>
+<table>
+  {% for user in users %}
+    <tr>
+      <td>
+        {{ user['first_name'] }} {{ user['last_name'] }}
+      </td>
+    </tr>
+  {% endfor %}
+</table>
+{% endblock %}
