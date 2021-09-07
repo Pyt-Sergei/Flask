@@ -1,0 +1,20 @@
+{% extends 'layouts/layout.html' %}
+
+{% block content %}
+<h2>Создание пользователя</h2>
+<form action="/users" method="POST">
+  <div>
+    <label for="first_name">Имя:</label>
+    <br>
+    <input id="first_name" type="text" name="first_name" />
+  </div>
+  <br>
+  <div>
+    <label for="last_name">Фамилия:</label>
+    <br>
+    <input type="text" name="last_name" />
+  </div>
+  <br>
+  <input type="submit" value="Создать" />
+</form>
+{% endblock %}
